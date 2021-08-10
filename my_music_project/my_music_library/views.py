@@ -5,7 +5,6 @@ from .serializers import SongSerializer
 from rest_framework import viewsets
 
 
-# Create your views here.
 class SongList(viewsets.ModelViewSet):
     queryset = Song.objects.all()
     serializer_class = SongSerializer
